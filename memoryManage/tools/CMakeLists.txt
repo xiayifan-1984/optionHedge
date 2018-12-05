@@ -1,0 +1,8 @@
+﻿CMAKE_MINIMUM_REQUIRED(VERSION 3.7)
+PROJECT(tools)
+
+ADD_EXECUTABLE(journal_toolEXE main.cpp)
+TARGET_LINK_LIBRARIES(journal_toolEXE journal)
+
+
+INSTALL(TARGETS journal_toolEXE DESTINATION "bin")

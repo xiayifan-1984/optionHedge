@@ -23,5 +23,5 @@ typedef std::pair<int, int> IntPair;
 #define MM_NAMESPACE_START namespace optionHedge { namespace memoryManage { 
 #define MM_NAMESPACE_END }};                               
 #define USING_MM_NAMESPACE using namespace optionHedge::memoryManage;
-
+#define OPTIONHEDGE_ROOT_DIR "/home/xiayf/projects/optionHedge/build"
 #endif

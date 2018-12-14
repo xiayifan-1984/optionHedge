@@ -1,6 +1,8 @@
 ﻿CMAKE_MINIMUM_REQUIRED(VERSION 3.7)
 PROJECT(optionHedge)
 
+
+
 SET(BOOST_INCLUDEDIR "/usr/local/include/boost")
 SET(BOOST_LIBRARYDIR "/usr/local/lib")
 
@@ -17,5 +19,6 @@ OPTION(USE_SERVICE "use memory service" ON)
 OPTION(USE_HASH_CODE "use hash code when writing" ON)
 
 ADD_SUBDIRECTORY(memoryManage)
+ADD_SUBDIRECTORY(configFile)
 
 INSTALL(DIRECTORY "${BOOST_LIBRARYDIR}/" DESTINATION "lib/boost")

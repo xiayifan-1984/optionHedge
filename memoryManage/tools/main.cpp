@@ -4,6 +4,7 @@
 #include "../utils/memoryManage_declare.h"
 #include "../journal/journal.h"
 #include "../log/MM_Log.h"
+#include "../journal/Frame.hpp"
 
 using namespace boost::program_options;
 USING_MM_NAMESPACE
@@ -16,7 +17,10 @@ using std::endl;
 
 int main(int argc, const char* argv[])
 {
+	/*
 	LogPtr logger = optionHedge::memoryManage::Log::getLogger("logfile");
-	OPTIONHEDGE_LOG_ERROR(logger, "this is the testing string");
+	OPTIONHEDGE_LOG_ERROR(logger, "this is the testing string");*/
+
+	Frame* fm = new Frame(nullptr);
 	return 0;
 }

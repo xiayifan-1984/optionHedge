@@ -1,4 +1,4 @@
-﻿#ifndef MEMORYMANAGE_DECLARE_H
+﻿#ifndef _DECLARE_H
 #define MEMORYMANAGE_DECLARE_H
 
 #include <boost/shared_ptr.hpp>
@@ -24,4 +24,8 @@ typedef std::pair<int, int> IntPair;
 #define MM_NAMESPACE_END }};                               
 #define USING_MM_NAMESPACE using namespace optionHedge::memoryManage;
 #define OPTIONHEDGE_ROOT_DIR "/home/xiayf/projects/optionHedge/build"
+
+/** fast type convert for moving address forward */
+#define ADDRESS_ADD(x, delta) (void*)((uintptr_t)x + delta)
+
 #endif

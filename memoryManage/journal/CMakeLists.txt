@@ -2,8 +2,8 @@
 PROJECT(journal)
 
 SET(LIB_UTIL_INCLUDE_FILES ../utils/memoryManage_declare.h ../utils/constants.h)
-SET(LIB_INCLUDE_FILES ../utils/memoryManage_declare.h ../utils/constants.h FrameHeader.h)
-SET(LIB_SOURCE_FILES journal.cpp Frame.hpp)
+SET(LIB_INCLUDE_FILES ../utils/memoryManage_declare.h ../utils/constants.h FrameHeader.h PageHeader.h PageUtil.h)
+SET(LIB_SOURCE_FILES journal.cpp Frame.hpp PageUtil.cpp Page.cpp)
 
 ADD_LIBRARY(${PROJECT_NAME} SHARED ${LIB_UTIL_INCLUDE_FILES} ${LIB_INCLUDE_FILES} ${LIB_SOURCE_FILES} )
 

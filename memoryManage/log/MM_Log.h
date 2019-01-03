@@ -1,7 +1,7 @@
 ﻿#ifndef MM_LOG_H
 #define MM_LOG_H
 
-#include "memoryManage_declare.h"
+#include "../utils/memoryManage_declare.h"
 
 #include <log4cplus/logger.h>
 #include <log4cplus/loggingmacros.h>

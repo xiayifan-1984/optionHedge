@@ -25,6 +25,9 @@ typedef std::pair<int, int> IntPair;
 #define USING_MM_NAMESPACE using namespace optionHedge::memoryManage;
 #define OPTIONHEDGE_ROOT_DIR "/home/xiayf/projects/optionHedge/build"
 
+#define JOURNAL_PREFIX string("optionHedge")        /**< journal file prefix */
+#define JOURNAL_SUFFIX string("journal")    /**< journal file suffix */
+
 /** fast type convert for moving address forward */
 #define ADDRESS_ADD(x, delta) (void*)((uintptr_t)x + delta)
 

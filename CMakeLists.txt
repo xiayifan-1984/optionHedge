@@ -1,4 +1,4 @@
-﻿CMAKE_MINIMUM_REQUIRED(VERSION 3.7)
+CMAKE_MINIMUM_REQUIRED(VERSION 3.7)
 PROJECT(optionHedge)
 
 
@@ -10,6 +10,7 @@ SET(Boost_USE_MULTITHREADED ON)
 SET(Boost_USE_STATIC_LIBS OFF)
 SET(Boost_USE_STATIC_RUNTIME OFF)
 
+<<<<<<< HEAD
 FIND_PACKAGE(Boost 1.66.0 COMPONENTS locale date_time filesystem system thread serialization math_tr1 python chrono regex program_options REQUIRED)
 INCLUDE_DIRECTORIES(${BOOST_INCLUDEDIR})
 

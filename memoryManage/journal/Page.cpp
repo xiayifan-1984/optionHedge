@@ -1,4 +1,4 @@
-﻿#include "Page.h"
+#include "Page.h"
 #include "PageHeader.h"
 #include "PageUtil.h"
 #include "../utils/Timer.h"
@@ -58,3 +58,4 @@ PagePtr Page::load(const string& dir, const string& jname, short pageNum, bool i
 	page->pageNum = pageNum;
 	return page;
 }
+

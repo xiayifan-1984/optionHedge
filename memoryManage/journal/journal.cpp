@@ -1,4 +1,4 @@
-﻿#include "journal.h"
+#include "journal.h"
 #include "PageUtil.h"
 #include "IPageProvider.h"
 

@@ -1,4 +1,4 @@
-﻿CMAKE_MINIMUM_REQUIRED(VERSION 3.7)
+CMAKE_MINIMUM_REQUIRED(VERSION 3.7)
 PROJECT(optionHedge)
 
 
@@ -13,7 +13,7 @@ SET(Boost_USE_STATIC_RUNTIME OFF)
 FIND_PACKAGE(Boost 1.62.0 COMPONENTS locale date_time filesystem system thread serialization math_tr1 chrono regex program_options REQUIRED)
 INCLUDE_DIRECTORIES(${BOOST_INCLUDEDIR})
 
-SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++1y -llog4cplus -lpthread -lboost_system -lboost_filesystem -lboost_regex -lboost_program_options -D_GLIBCXX_USE_CXX11_ABI=1 -O3 -Wall")
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++1y -llog4cplus -lpthread -lboost_system -lboost_filesystem -lboost_regex  -lboost_program_options -D_GLIBCXX_USE_CXX11_ABI=1 -O3 -Wall")
 OPTION(BUILD_SHARED_LIBS "turn OFF for .a libs" ON)
 OPTION(USE_SERVICE "use memory service" ON)
 OPTION(USE_HASH_CODE "use hash code when writing" ON)

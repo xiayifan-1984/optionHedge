@@ -1,4 +1,4 @@
-﻿#ifndef MEMORYMANAGE_JOURNAL_H
+#ifndef MEMORYMANAGE_JOURNAL_H
 #define MEMORYMANAGE_JOURNAL_H
 
 #include "../utils/memoryManage_declare.h"
@@ -98,6 +98,7 @@ inline string Journal::getShortName() const
 {
 	return shortName;
 }
+
 
 MM_NAMESPACE_END
 #endif

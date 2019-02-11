@@ -1,4 +1,4 @@
-﻿#include "PageUtil.h"
+#include "PageUtil.h"
 #include "PageHeader.h"
 
 #include <sys/mman.h>

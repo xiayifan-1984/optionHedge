@@ -1,4 +1,4 @@
-﻿#ifndef MEMORYMANAGE_CONSTANTS_H
+#ifndef MEMORYMANAGE_CONSTANTS_H
 #define MEMORYMANAGE_CONSTANTS_H
 
 #include "memoryManage_declare.h"

@@ -1,4 +1,4 @@
-﻿CMAKE_MINIMUM_REQUIRED(VERSION 3.7)
+CMAKE_MINIMUM_REQUIRED(VERSION 3.7)
 PROJECT(journal)
 
 SET(LIB_UTIL_INCLUDE_FILES ../utils/memoryManage_declare.h ../utils/constants.h ../utils/Timer.h ../utils/json.hpp)

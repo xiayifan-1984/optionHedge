@@ -1,13 +1,17 @@
-#include <boost/program_options.hpp>
+﻿#include <boost/program_options.hpp>
 #include <iostream>
 #include <algorithm>
+<<<<<<< HEAD
 #include <stdio.h>
 #include <string.h>
+=======
+>>>>>>> 120815403bfbfec1a5fb574e13704fa340603c77
 #include "../utils/memoryManage_declare.h"
 #include "../journal/journal.h"
 #include "../log/MM_Log.h"
 #include "../journal/Frame.hpp"
 #include "../journal/PageHeader.h"
+<<<<<<< HEAD
 #include "../utils/Timer.h"
 #include "../journal/Page.h"
 #include "../journal/PageProvider.h"
@@ -17,6 +21,8 @@
 #include <sys/fcntl.h>
 #include <sys/stat.h>
 #include <sys/types.h>
+=======
+>>>>>>> 120815403bfbfec1a5fb574e13704fa340603c77
 
 using namespace boost::program_options;
 USING_MM_NAMESPACE
@@ -25,16 +31,21 @@ using namespace log4cplus;
 using std::cout;
 using std::endl;
 
+<<<<<<< HEAD
 struct TestData
 {
 	int id;
 	char content[256];
 };
+=======
+
+>>>>>>> 120815403bfbfec1a5fb574e13704fa340603c77
 
 int main(int argc, const char* argv[])
 {
 	/*
 	LogPtr logger = optionHedge::memoryManage::Log::getLogger("logfile");
+<<<<<<< HEAD
 	OPTIONHEDGE_LOG_ERROR(logger, "this is the testing string");
 	const char time_format[] = "%Y-%m-%d %H:%M:%S";
 	cout << "Current time is " << parseNano(getNanoTime(), time_format) << endl;*/
@@ -81,5 +92,10 @@ int main(int argc, const char* argv[])
 
 	cout << "buffer 1 is " << buffer << endl;
 	cout << "buffer 2 is " << buffer1 << endl;
+=======
+	OPTIONHEDGE_LOG_ERROR(logger, "this is the testing string");*/
+
+	cout << "size of PageHeader is " << sizeof(PageHeader) << endl;
+>>>>>>> 120815403bfbfec1a5fb574e13704fa340603c77
 	return 0;
 }

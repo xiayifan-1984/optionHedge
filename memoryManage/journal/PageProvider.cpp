@@ -1,4 +1,4 @@
-﻿#include "PageProvider.h"
+#include "PageProvider.h"
 #include "PageUtil.h"
 #include "Page.h"
 #include "journal.h"

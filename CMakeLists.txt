@@ -22,7 +22,7 @@ foreach(NameAndValue ${ConfigContents})
     MESSAGE( STATUS ${Name} " = " ${Value} )
 endforeach()
 
-SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++1y -llog4cplus -lpthread -lboost_system -lboost_filesystem -lboost_regex  -lboost_program_options -D_GLIBCXX_USE_CXX11_ABI=1 -O3 -Wall")
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++1y -g -llog4cplus -lpthread -lboost_system -lboost_filesystem -lboost_regex  -lboost_program_options -D_GLIBCXX_USE_CXX11_ABI=1 -O0 -Wall")
 OPTION(BUILD_SHARED_LIBS "turn OFF for .a libs" ON)
 OPTION(USE_SERVICE "use memory service" ON)
 OPTION(USE_HASH_CODE "use hash code when writing" ON)

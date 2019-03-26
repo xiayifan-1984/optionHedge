@@ -1,4 +1,4 @@
-#ifndef _DECLARE_H
+﻿#ifndef _DECLARE_H
 #define MEMORYMANAGE_DECLARE_H
 
 #include <boost/shared_ptr.hpp>

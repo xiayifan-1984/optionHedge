@@ -112,7 +112,7 @@ void PageEngine::stop()
 		commThread->join();
 		commThread.reset();
 	}
-
+	
 	OPTIONHEDGE_LOG_INFO(logger, "stop Comm done .........");
 
 	/* stop socket io thread */
@@ -155,7 +155,7 @@ int PageEngine::reg_journal(const string& clientName)
 	}
 
 	PageCommMsg* msg = GET_COMM_MSG(commBuffer, idx);
-	msg->status = PAGED_COMM_ALLOCATED;
+	msg->status = PAGED_COMM_OCCUPIED;
 	msg->last_page_num = 0;
 	auto it = clientJournals.find(clientName);
 
@@ -398,4 +398,19 @@ void PageEngine::start_comm()
 			release_mutex();
 		}
 	}
+}
+
+IntPair PageEngine::register_strategy(const string& strategyName)
+{
+	return std::make_pair<int, int>(0,0);
+}
+
+bool PageEngine::sub_md(const vector<string>& tickers, short source, short msgType, bool isLast)
+{
+	return true;
+}
+
+bool PageEngine::login_td(const string& clientName, short source)
+{
+	return true;
 }

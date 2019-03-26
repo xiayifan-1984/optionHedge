@@ -1,4 +1,4 @@
-#include "PageProvider.h"
+﻿#include "PageProvider.h"
 #include "PageUtil.h"
 #include "Page.h"
 #include "journal.h"
@@ -8,6 +8,8 @@
 
 #include "boost/asio.hpp"
 #include "boost/array.hpp"
+
+#include <iostream>
 
 USING_MM_NAMESPACE
 
@@ -85,6 +87,7 @@ int ClientPageProvider::register_journal(const string&dir, const string& jname)
 	}
 
 	PageCommMsg* serverMsg = GET_COMM_MSG(comm_buffer, comm_idx);
+	
 	if (serverMsg->status == PAGED_COMM_OCCUPIED)
 	{
 		memcpy(serverMsg->folder, dir.c_str(), dir.length() + 1);

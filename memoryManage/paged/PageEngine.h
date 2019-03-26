@@ -100,7 +100,7 @@ private:
 private:
 	void start_comm();
 	void start_socket();
-	void start_task();
+//	void start_task();
 
 	/** release the page assigned in comm msg */
 	void release_page(const PageCommMsg& msg);

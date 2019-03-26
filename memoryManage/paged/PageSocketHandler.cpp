@@ -89,12 +89,27 @@ void PageSocketHandler::process_msg()
 	{
 		case PAGED_SOCKET_JOURNAL_REGISTER:
 		{
-
+			int idx = util->reg_journal(req->name);
+			PagedSocketRspJournal rsp = {};
+			rsp.type = req_type;
+			rsp.success = idx >= 0;
+			rsp.comm_idx = idx;
+			memcpy(&_data[0], &rsp, sizeof(rsp));
+			break;
 		}
 		case PAGED_SOCKET_READER_REGISTER:
 		case PAGED_SOCKET_WRITER_REGISTER:
 		{
-
+			string comm_file;
+			int file_size;
+			bool ret = util->reg_client(comm_file,file_size,req->name,req->pid,req_type==PAGED_SOCKET_WRITER_REGISTER);
+			PagedSocketRspClient rsp = {};
+			rsp.type = req_type;
+			rsp.success = ret;
+			rsp.file_size = file_size;
+			memcpy(rsp.comm_file, comm_file.c_str(), comm_file.length()+1);
+			memcpy(&_data[0], &rsp, sizeof(rsp));
+			break;
 		}
 	}
 

@@ -22,9 +22,9 @@ public:
 	/** return (rid_start, rid_end) */
 	virtual IntPair register_strategy(const string& strategyName)=0;
 	/** return true if this client exists, and fill in commfile, size of commfile */
-	virtual bool reg_client(string& commFile, int& fileSize, int& hashCode, const string& clientName, int pid, bool isWriter) = 0;
+	virtual bool reg_client(string& commFile, int& fileSize,const string& clientName, int pid, bool isWriter) = 0;
 	/** exit client */
-	virtual void exit_client(const string& clientName, int hashCode, bool needHashCheck) = 0;
+	virtual void exit_client(const string& clientName) = 0;
 	/** subscribe market data */
 	virtual bool sub_md(const vector<string>& tickers, short source, short msgType, bool isLast) = 0;
 	/** login trade engine */

@@ -5,7 +5,7 @@ SET(LIB_SOURCE_FILES PageSocketHandler.cpp PageSocketHandler.h PageCommStruct.h 
 
 SET(LIB_FILES ${LIB_SOURCE_FILES})
 ADD_LIBRARY(${PROJECT_NAME} ${LIB_FILES})
-TARGET_LINK_LIBRARIES(${PROJECT_NAME} journal kflog)
+TARGET_LINK_LIBRARIES(${PROJECT_NAME} journal optionHedgelog)
 
 INSTALL(FILES PageCommStruct.h PageSocketStruct.h DESTINATION "include")
 INSTALL(TARGETS ${PROJECT_NAME} DESTINATION "lib/memoryManage")

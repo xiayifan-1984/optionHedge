@@ -7,4 +7,4 @@ LINK_DIRECTORIES(${BUILD_DIR}/lib/memoryManage)
 LINK_DIRECTORIES(${BUILD_DIR}/lib/boost)
 
 ADD_EXECUTABLE(journal_toolEXE main.cpp)
-TARGET_LINK_LIBRARIES(journal_toolEXE journal optionHedgelog)
+TARGET_LINK_LIBRARIES(journal_toolEXE journal optionHedgelog paged)
